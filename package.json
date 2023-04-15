@@ -1,0 +1,25 @@
+{
+  "name": "dashjs-esm",
+  "version": "4.6.0",
+  "description": "Dash.js exported as ES module.",
+  "type": "module",
+  "main": "dist/dash.js",
+  "module": "dist/dash.js",
+  "types": "dist/dash.d.ts",
+  "files": [
+    "dist"
+  ],
+  "author": "Dash Industry Forum",
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "build": "esbuild dash.js --bundle --format=esm --outdir=dist --platform=node",
+    "postbuild": "cp node_modules/dashjs/index.d.ts dist/dash.d.ts"
+  },
+  "dependencies": {
+    "dashjs": "https://github.com/Dash-Industry-Forum/dash.js/tarball/master"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.16",
+    "wet-run": "^0.0.8"
+  }
+}

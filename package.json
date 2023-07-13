@@ -19,7 +19,7 @@
     "dashjs": "https://github.com/Dash-Industry-Forum/dash.js/tarball/master"
   },
   "devDependencies": {
-    "esbuild": "^0.17.16",
+    "esbuild": "^0.18.12",
     "wet-run": "^0.0.8"
   }
 }

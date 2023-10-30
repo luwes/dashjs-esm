@@ -20,6 +20,6 @@
   },
   "devDependencies": {
     "esbuild": "^0.17.16",
-    "wet-run": "^0.0.8"
+    "wet-run": "^0.5.1"
   }
 }
